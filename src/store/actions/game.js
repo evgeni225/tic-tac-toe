@@ -5,7 +5,7 @@ export const createNewGame = (settings) => {
     return async dispatch => {
         try {
             dispatch(createGameAction())
-            const response = await axios.post(`https://git.heroku.com/tictactoe-api-123412.git/game`, {settings})
+            const response = await axios.post(`https://tictactoe-api-123412.herokuapp.com/game`, {settings})
             console.log(response.data)
             dispatch(createGameSuccessAction(response.data.id))
         } catch (e) {

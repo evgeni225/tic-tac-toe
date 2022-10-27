@@ -25,7 +25,7 @@ export const Game = () => {
         // if (!game.game.id) return
 
         // ws connection
-        socket.current = new WebSocket('https://git.heroku.com/tictactoe-api-123412.git')
+        socket.current = new WebSocket('ws://tictactoe-api-123412.herokuapp.com')
         socket.current.onopen = () => {
         socket.current.send(JSON.stringify({
             id: params.id,
