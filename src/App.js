@@ -11,7 +11,7 @@ function App() {
 
     useEffect(() => {
         dispatch(setUserAction())
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
         <BrowserRouter>

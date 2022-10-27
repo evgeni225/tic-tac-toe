@@ -50,7 +50,7 @@ export const Game = () => {
                     break
             }
         }
-    }, [game.game.id, params.id, user.username, user.id])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const handleConnection = (msg) => {
         const { userId } = msg
