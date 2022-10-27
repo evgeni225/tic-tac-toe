@@ -1,0 +1,29 @@
+.main-menu {
+    /* only for developing */
+    margin: 20px;
+    
+    border: 1px solid lightgray;
+    background-color: floralwhite;
+    padding: 50px;
+    color: peru;
+    width: 400px;
+    position: relative;
+}
+
+.main-menu__username {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.main-menu__header {
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 1px solid peru;
+    margin-bottom: 12px;
+}
+
+.main-menu__btn {
+    margin-top: 12px;
+}

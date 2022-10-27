@@ -1,0 +1,168 @@
+/* /////////////////////////////////// */
+/* btn */
+
+.btn {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid peru;
+    font-size: 1rem;
+    background-color: papayawhip;
+    color: peru;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.btn:hover,
+.btn--fill {
+    background-color: peru;
+    color: floralwhite;
+}
+
+.btn:disabled,
+.btn:disabled:hover {
+    color: tan;
+    background-color: papayawhip;
+    cursor: not-allowed;
+}
+
+
+/* /////////////////////////////////// */
+/* input */
+
+/* input[type=range] */
+
+.input[type=range] {
+    height: 31px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.input[type=range]:focus {
+    outline: none;
+}
+
+.input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: floralwhite;
+    border-radius: 5px;
+    border: 1px solid peru;
+}
+
+.input[type=range]::-webkit-slider-thumb {
+    border: 3px solid peru;
+    height: 24px;
+    width: 15px;
+    border-radius: 5px;
+    background: floralwhite;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+
+.input[type=range]:focus::-webkit-slider-runnable-track {
+    background: floralwhite;
+}
+
+.input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: floralwhite;
+    border-radius: 5px;
+    border: 1px solid peru;
+}
+
+.input[type=range]::-moz-range-thumb {
+    border: 1px solid peru;
+    height: 24px;
+    width: 15px;
+    border-radius: 5px;
+    background: floralwhite;
+    cursor: pointer;
+}
+
+.input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.input[type=range]::-ms-fill-lower {
+    background: floralwhite;
+    border: 1px solid peru;
+    border-radius: 10px;
+}
+
+.input[type=range]::-ms-fill-upper {
+    background: floralwhite;
+    border: 1px solid peru;
+    border-radius: 10px;
+}
+
+.input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    border: 1px solid peru;
+    height: 24px;
+    width: 15px;
+    border-radius: 5px;
+    background: floralwhite;
+    cursor: pointer;
+}
+
+.input[type=range]:focus::-ms-fill-lower {
+    background: floralwhite;
+}
+
+.input[type=range]:focus::-ms-fill-upper {
+    background: floralwhite;
+}
+
+
+/* input all */
+
+.input {
+    border: 1px solid peru;
+    background-color: transparent;
+    padding: 10px;
+    color: peru;
+    width: 100%;
+}
+
+.input--range {
+    border: none;
+}
+
+.input--sm {
+    padding: 0 0 2px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.input:focus {
+    outline: none;
+    color: peru;
+}
+
+.input::placeholder {
+    color: peru;
+    opacity: 0.5;
+}
+
+
+
+
+/* cursor */
+
+.c-pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+@import 'reset.css';
+@import 'utils.css';
+@import 'form.css';
+@import 'main-menu.css';
+@import 'game.css';
+
+
+.app {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+.board > * + * {
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+.item {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

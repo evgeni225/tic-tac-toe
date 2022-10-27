@@ -1,0 +1,67 @@
+.board {
+    border: 1px solid lightgray;
+    padding: 50px;
+    min-width: 250px;
+    width: fit-content;
+    background-color: floralwhite;
+    position: relative;
+    color: peru;
+}
+
+.board__username {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 100%;
+}
+
+
+.board__header {
+    border-bottom: 1px solid peru;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.board__body {
+    margin: 0 auto 20px auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.board__row {
+    display: flex;
+    gap: 10px;
+}
+
+.board__item {
+    border: 1px solid peru;
+    width: 70px;
+    height: 70px;
+    background-color: papayawhip;
+    font-size: 30px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.board__item:hover {
+    background-color: peru;
+    color: #fff;
+    transition: .3s ease-in;
+}
+
+.board__btns {
+    display: flex;
+    gap: 10px;
+}

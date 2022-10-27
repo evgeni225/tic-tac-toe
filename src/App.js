@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Menu } from './components/Menu'
+import { Game } from './components/Game'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { useEffect } from 'react'
+import { setUserAction } from './store/reducers/user'
+import { useDispatch, useSelector } from 'react-redux'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const loading = useSelector(state => state.user.loading)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(setUserAction())
+    }, [])
+
+    return (
+        <BrowserRouter>
+            <div className="app">
+                {loading && <div>loading...</div>}
+                {!loading && 
+                    <Routes>
+                        <Route path="/" element={<Menu />} />
+                        <Route path="/:id" element={<Game />} />
+                    </Routes>
+                }
+            </div>
+        </BrowserRouter>
+    )
 }
 
-export default App;
+export default App
